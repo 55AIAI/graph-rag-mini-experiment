@@ -1,0 +1,6 @@
+condition,n,complete_evidence_percent,answer_em_percent,answer_f1_percent,failed_outputs,mean_context_tokens
+bm25_rerank,200,68.0,37.000,47.233,0,702.0
+dense_rerank,200,67.0,34.000,44.833,0,700.6
+graph_rerank,200,71.0,37.000,46.933,0,703.1
+closed_book,200,,4.500,6.515,0,0.0
+oracle_supporting_sentences,200,,49.500,64.119,0,149.0

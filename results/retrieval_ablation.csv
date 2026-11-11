@@ -1,0 +1,7 @@
+route,complete_evidence_percent,supporting_sentence_recall_percent,mean_context_tokens
+bm25,48.5,73.25,690.0
+bm25_rerank,68.0,84.33,702.0
+dense,51.5,74.07,692.7
+dense_rerank,67.0,83.08,700.6
+graph,67.0,81.54,700.4
+graph_rerank,71.0,85.17,703.1
