@@ -4,6 +4,14 @@ A small research study of whether a lightweight title-mention graph helps multi-
 
 **Release status:** documentation and reported aggregate results. The original experiment implementation, selected dataset and per-question journal are **not included**. Metrics were transcribed from the author's technical report dated 11 November 2026; they were not independently recomputed for this publication.
 
+## Benchmark snapshot
+
+![Reported comparison of complete evidence and answer F1 for BM25, dense, and graph-assisted retrieval](assets/retrieval_comparison.svg)
+
+**Key takeaway:** on the reported 200-question local sample, graph-assisted retrieval retained complete annotated evidence on **71%** of questions versus **67%** for dense retrieval. Answer F1 was **46.933%** versus **44.833%** (**+2.100 percentage points**), but the reported paired 95% bootstrap confidence interval **includes zero**, so the F1 improvement is **not statistically conclusive**. BM25 achieved the highest observed answer F1 (**47.233%**) among retrieved conditions.
+
+*Evidence boundary: this figure visualizes aggregate values transcribed from the author's technical report; the original implementation, dataset rows, and per-question predictions are not included in this release, and the numbers were not independently recomputed. The reported benchmark is not an official HotpotQA leaderboard evaluation.*
+
 ## Main finding
 
 On 200 reserved questions in a local pooled HotpotQA setting, graph-assisted retrieval retained complete annotated evidence for **71%** of questions versus **67%** for dense retrieval. Answer F1 was **46.933%** versus **44.833%**. The reported paired 95% interval for the **+2.100 percentage-point** F1 difference includes zero. BM25 with the same reranker had the highest observed F1 of the retrieved conditions.
